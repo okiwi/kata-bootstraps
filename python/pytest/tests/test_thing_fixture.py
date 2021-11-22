@@ -1,10 +1,10 @@
 import pytest
-from app.thing import Thing
+from app.verifiesrules import VerifiesRules
 
 
 @pytest.fixture
 def thing():
-    return Thing("Bob")
+    return VerifiesRules("Bob")
 
 
 def test_correct_greeting(thing):
